@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.core.widget.NestedScrollView
+    android:layout_above="@+id/rl_googleAd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".AboutUs">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_margin="@dimen/dimen_8dp"
+        android:name="com.google.android.youtube.player.YouTubePlaye‌​rFragment"
+        android:maxHeight="250dp"
+        android:id="@+id/youtube_holder"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:visibility="visible"/>
+    <TextView
+        android:textSize="18sp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:layout_marginHorizontal="@dimen/dimen_8dp"
+        android:text="@string/about_us_text"
+        android:id="@+id/tv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+    <include layout="@layout/view_googlead"></include>
+</RelativeLayout>

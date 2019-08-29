@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorPrimary"
+    android:id="@+id/feed_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/tv_video"
+        android:layout_alignBottom="@+id/separator"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:id="@+id/song_progress_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#b5e6c808"
+            />
+
+        <View
+            android:id="@+id/song_anti_progress_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:id="@+id/tv_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:text="SONG TITLE"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        />
+
+
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:paddingEnd="3dp"
+        android:paddingStart="3dp"
+        />
+
+
+</RelativeLayout>

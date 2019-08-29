@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "369430678076",
+    "firebase_url": "https://team-namo-346de.firebaseio.com",
+    "project_id": "team-namo-346de",
+    "storage_bucket": "team-namo-346de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369430678076:android:fd27b48a988935e7",
+        "android_client_info": {
+          "package_name": "com.teamnamo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369430678076-q7ih052biloop39og2vibpvo77eskm98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamnamo",
+            "certificate_hash": "5e2ece822377ee0a663a0360c26fc2bf6a6cfbf4"
+          }
+        },
+        {
+          "client_id": "369430678076-goebhoj31aisnce1o4afpohkarmnj3ek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuuXF04OD3tixMKoGPydxd8L3fTlMmjUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369430678076-goebhoj31aisnce1o4afpohkarmnj3ek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

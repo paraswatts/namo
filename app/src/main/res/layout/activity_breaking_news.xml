@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:background="@color/colorAccent"
+    xmlns:draggable_view="http://schemas.android.com/apk/res-auto"
+
+    xmlns:draggable_panel="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="com.teamnamo.Youtube.YoutubeActivity">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_above="@+id/rl_googleAd"
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:duration="1500">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_bn" />
+            <include layout="@layout/shimmer_bn" />
+            <include layout="@layout/shimmer_bn" />
+            <include layout="@layout/shimmer_bn" />
+            <include layout="@layout/shimmer_bn" />
+            <include layout="@layout/shimmer_bn" />
+            <include layout="@layout/shimmer_bn" />
+            <include layout="@layout/shimmer_bn" />
+
+            <include layout="@layout/shimmer_bn" />
+
+            <include layout="@layout/shimmer_bn" />
+
+            <include layout="@layout/shimmer_youtube" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_above="@+id/rl_googleAd"
+        android:layout_below="@+id/youtube_holder"
+        android:visibility="gone"
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/dimen_8dp"
+        android:id="@+id/rv_video_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/view_googlead"></include>
+
+</RelativeLayout>

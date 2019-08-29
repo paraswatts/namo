@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/feed_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_back"
+    android:padding="@dimen/dimen_8dp"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="475dp">
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/ll_download"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/tv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/dimen_8dp"
+           />
+
+            <TextView
+
+                android:text="@string/download"
+                android:textSize="18sp"
+                android:id="@+id/tv_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#0645AD" />
+        </LinearLayout>
+
+
+</LinearLayout>
+
